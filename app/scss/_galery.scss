@@ -1,0 +1,63 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.filters li{
+    list-style: none;
+    margin: 20px 10px;
+}
+.filters li.active{
+    a{
+        background-color: $main;
+        color: $white;
+    }
+}
+.filters li a{
+    color: $main;
+    padding: 10px 20px;
+    border: 2px solid $main;
+    transition: all 0.5s;
+}
+.filters li a:hover{
+    background-color: $main;
+    color: $white;
+     transition: all 0.5s;
+}
+.galery-photo img{
+    width: 280px;
+    height: 280px;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.3);
+    
+
+}
+.galery-photo{
+    margin: 5px;
+    position: relative;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    text-align: center;
+    padding: 43%;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.hover i:before{
+    font-size: 30px;
+    color: $white;
+    margin: 0;
+    background-color: #222;
+    padding: 10px;
+}
+.galery-photo:hover{
+    .hover{
+        opacity: 1;
+
+    }
+}
